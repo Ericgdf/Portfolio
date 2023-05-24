@@ -1,0 +1,84 @@
+.stack-background{
+    background-color: var(--tertiary-color-verylight);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.stack-title{
+    font-size: 3em;
+    color: var(--darken-text);
+    margin-bottom: 2em;
+}
+
+.travel-section{
+    display: flex;
+    gap : 2em;
+    margin-top: 2em;
+}
+
+.design-section{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.design-section.right{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.line{
+    width: 20em;
+    height: 20em;
+    border-top: solid 0.3em var(--secondary-color-light);
+    border-right:  solid 0.3em var(--secondary-color-light);
+    margin-top: 2em;
+    border-radius: 0  4em 0 0;
+}
+
+.line.right{
+    border-left:  solid 0.3em var(--secondary-color-light);
+    border-right: none;
+    border-radius: 4em 0 0 0;
+}
+
+.hide{
+    opacity :0;
+    color: red;
+}
+
+.explanation{
+    font-size: 2em;
+    color: var(--secondary-color-light);
+    text-align: center;
+}
+
+.icon-container{
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+    padding: 1em;
+}
+
+.element-icon{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.icon{
+    height: 4em;
+    width: 4em;
+    margin-bottom: 0.4em;
+}
+
+.icon-name{
+    font-size: 1.1em;
+    color: var(--darken-text);
+
+}

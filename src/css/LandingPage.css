@@ -1,11 +1,11 @@
 .landing-page-background{
     height: 100vh;
-    width: 100vw;
     background-color: var(--secondary-color-light);
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
+
 }
 
 .background-form{
@@ -38,4 +38,10 @@
     height: 3em;
     width: 3em;
     bottom: 1.5em;
+}
+
+.trigger{
+    position: absolute;
+    top: 1em;
+    height: 20vh;
 }
