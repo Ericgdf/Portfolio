@@ -89,7 +89,7 @@ const StackSection = () => {
         <div className='travel-section'>
             <div className='line right' ref={lineRight}></div>
             <div className="design-section right" ref={frontSection}>
-                <p className="explanation">Then time to design front</p>
+                <p className="explanation">Then time to design front-end</p>
                 <div className="icon-container">
                     <div className="element-icon">
                         <img className='icon' src={javascript} />
@@ -113,7 +113,7 @@ const StackSection = () => {
         <div className='travel-section'>
             
             <div className="design-section" ref={backSection}>
-                <p className="explanation">And if we need back</p>
+                <p className="explanation">And if we need back-end</p>
                 <div className="icon-container">
                     <div className="element-icon">
                         <img className='icon' src={express} />
