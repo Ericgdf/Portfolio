@@ -1,0 +1,53 @@
+.presentation-section-background{
+    background-color: var(--tertiary-color-verylight);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 3em;
+    height: 100vh;
+}
+
+.about-me-section{
+    display: flex;
+    
+}
+
+
+.ring-picture{
+    border-radius: 5em;
+    border: solid 0.2em var(--secondary-color-light);
+    border-radius: 5em;
+    margin-left: 3em;
+    margin-right: 3em;
+    background-image: url('../assets/img/profil-picture.png');
+    background-size: cover;
+    background-position: center;
+    height: 14em;
+    width: 10em;
+    opacity: 0.9;
+}
+
+
+.title-presentation{
+    font-size: 3em;
+}
+
+.title-presentation.top{
+   color: var(--primary-color);
+}
+
+.title-presentation.bottom{
+    color: var(--secondary-color-light);
+    margin-top: 3.5em;
+ }
+
+.text-presentation{
+    margin-top: 4em;
+    width: 90%;
+    font-weight: 200;
+    text-align: center;
+    font-family: var(--text-font);
+    color: var(--primary-color);
+    font-size: 1.2em;
+}
+

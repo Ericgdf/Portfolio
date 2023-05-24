@@ -1,0 +1,31 @@
+@font-face {
+  font-family: 'Magilio';
+  src: url('../assets/fonts/MagilioRegular-8Mxvg.otf') format('opentype');
+  font-weight: 100;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@300&display=swap');
+
+
+html{
+  font-size: 16px;
+  font-family: 'Magilio';
+}
+
+:root{
+  --primary-color : #314D4F;
+  --secondary-color-light : #E1C7C1;
+  --tertiary-color-verylight : #F8F3F1;
+  --square-color1 : #5D362D;
+  --square-color2 : #355355;
+  --darken-text: #273E3F;
+  --very-darken-text: #1D2E2F;
+  --line-color: #EFE0DC;
+  --text-font: 'Archivo'
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
