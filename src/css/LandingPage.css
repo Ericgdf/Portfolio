@@ -23,6 +23,7 @@
 }
 
 .text-landing-page{
+
     font-size: 1.5em;
 }
 
@@ -44,4 +45,21 @@
     position: absolute;
     top: 1em;
     height: 20vh;
+}
+
+@media  screen and (max-width : 1130px) {
+
+    .travel-section{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .line{
+        display: none;
+    }
+
+    .scroll-icon{
+        display: none;
+    }
+    
 }

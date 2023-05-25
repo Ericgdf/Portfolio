@@ -1,4 +1,4 @@
-import { useEffect, useRef } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { gsap, ScrollTrigger } from 'gsap/all';
 import Scrollicon from '../assets/Icon/scroll.png';
 import '../css/LandingPage.css';
@@ -6,6 +6,18 @@ import '../css/PresentationSection.css'
 
 const LandingPage = () => {
   gsap.registerPlugin(ScrollTrigger);
+
+  const [width, setWidth] = useState(0)
+
+  useEffect(() => {
+    const handleWidth = () => {
+      setWidth(window.innerWidth)
+    }
+
+    window.addEventListener('resize', handleWidth)
+
+    handleWidth()
+  },[])
 
   const scrollIconRef = useRef(null);
   const formZoomInRef = useRef(null);
@@ -44,11 +56,10 @@ const LandingPage = () => {
   }))
     
     zoomTl.to(introText.current,{display : 'none', opacity : 0})
-          .fromTo(formZoomInRef.current,{ height: '60vh', width: '20vw',}, { height: '100vh', width: '100vw', borderRadius: 0,})
+          .fromTo(formZoomInRef.current, {height: '60vh', width: '20vw'}  , { height: '100vh', width: '100vw', borderRadius: 0,})
           .fromTo(presentationBackground.current,{display : 'none', opacity : 0}, {display : 'flex', opacity : 1})
           .from(aboutMyselfElement.current, {marginRight: 0, marginLeft : 0})
           .fromTo(bioPresentation.current, {opacity : 0}, {opacity : 1})
-
 
 
   }, []);

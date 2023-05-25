@@ -26,6 +26,7 @@
     align-items: center;
     width: 50%;
     gap: 1em;
+    color: var(--primary-color);
     
 }
 
@@ -78,6 +79,69 @@
 
 .color-square.even{
     background-color: var( --square-color2);
+}
+
+/* responsive section */ 
+
+@media  screen and (max-width : 1130px) {
+
+    .link-project{
+        text-align: center;
+        font-size: 1.5em;
+    }
+
+    .title-project{
+        font-size: 2em;
+        
+    }
+
+    .resume-project{
+        width: 90%;
+        font-size: 1.4em;
+
+    }
+
+    .prez-project-background{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        gap: 1em;
+        margin-bottom: 1em;
+        height: 100%;
+        padding: 0;
+        margin-bottom: 1em;
+        padding: 1em;
+        
+    }
+
+    .section-title{
+        margin-bottom: 0.3em;
+    }
+
+    .text-project-section{
+        width: 100%;
+    }
+
+    .link{
+       display: none;
+    }
+
+    .color-square{
+        display: none;
+    }
+
+    .img-section{
+        width: 80%;
+        justify-content: space-around;
+        
+    }
+
+    .img-section > img{
+        margin-left: 0;
+        
+    }
+    
 }
 
 

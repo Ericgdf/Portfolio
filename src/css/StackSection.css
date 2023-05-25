@@ -83,3 +83,20 @@
     color: var(--darken-text);
 
 }
+
+.responsive{
+    display: none;
+}
+
+@media  screen and (max-width : 1130px) {
+
+    .travel-section{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .line{
+        display: none;
+    }
+    
+}
