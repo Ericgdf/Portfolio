@@ -1,0 +1,37 @@
+.contact-background{
+    background-color: var(--tertiary-color-verylight);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 2em;
+
+}
+
+.contact-title{
+    font-size: 3em;
+    margin-top: 3em;
+    margin-bottom: 1em;
+    color: var(--primary-color);
+}
+
+.icon-section-contact{
+    display: flex;
+    gap: 2em;
+    margin-bottom: 4em;
+    height: 5em;
+}
+
+.credit{
+    font-size: 0.7em;
+}
+
+.icon-contact{
+    height: 4em;
+    width: 4em;
+    transition: transform 0.3s;
+}
+
+.icon-contact:hover{
+    transform: scale(1.1)
+}

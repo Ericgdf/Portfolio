@@ -4,11 +4,10 @@
   font-weight: 100;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@300&display=swap');
 
 
 html{
-  font-size: 16px;
+  font-size: 17px;
   font-family: 'Magilio';
 }
 
@@ -20,6 +19,7 @@ html{
   --square-color2 : #355355;
   --darken-text: #273E3F;
   --very-darken-text: #1D2E2F;
+  --brown-text : #BD8275;
   --line-color: #EFE0DC;
   --text-font: 'Archivo'
 }
@@ -28,4 +28,5 @@ html{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  max-width: 100vw;
 }
