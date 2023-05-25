@@ -3,6 +3,7 @@ import ProjectPresentation from './ProjectPresentation'
 import agenceMockUp from '../assets/mock-up/agence mock-up.png'
 import illuxplorationMockUp from '../assets/mock-up/illuxploration mock-up.png'
 import spotCast from '../assets/mock-up/spotcast.png'
+import undefined from '../assets/mock-up/Undefined.png'
 
 
 
@@ -24,8 +25,8 @@ const Project = () => {
             id : 3,
             name : 'Hackaton / Search Bar',
             description : 'In group we create a global event search bar, enabling users to find events across countries worldwide, providing a seamless way to discover and explore various cultural happenings.',
-            imageLink :agenceMockUp,
-            websiteLink : ""
+            imageLink :undefined,
+            websiteLink : "https://undefined-ashitaaka.vercel.app/"
         },
         {
             id : 4,
