@@ -65,7 +65,9 @@
     
 }
 
-@media  screen and (max-width : 430px) {
+@media  screen and (max-width : 500px) {
+
+  
 
     .title-landing-page{
         font-size: 2.7em;
@@ -74,5 +76,5 @@
     .text-landing-page{
         font-size: 1.3em;
     }
-    
+   
 }

@@ -9,7 +9,7 @@ const ProjectPresentation = ({name, description, imageLink, websiteLink,id}) => 
           <p className="resume-project"> {description} </p>
           {websiteLink === "" 
           ? "" 
-          : <a className="link-project" href= {websiteLink}> Go to the website</a>
+          : <a className="link-project" href= {websiteLink} target='_blank'> Go to the website</a>
           }
         </div>
         <div className="img-section">
