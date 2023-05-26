@@ -2,7 +2,7 @@ import React from 'react'
 import ProjectPresentation from './ProjectPresentation'
 import agenceMockUp from '../assets/mock-up/agence mock-up.png'
 import illuxplorationMockUp from '../assets/mock-up/illuxploration mock-up.png'
-import spotCast from '../assets/mock-up/spotcast.png'
+import spotCast from '../assets/mock-up/Spotcast.png'
 import undefined from '../assets/mock-up/Undefined.png'
 
 
