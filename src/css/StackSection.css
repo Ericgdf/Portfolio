@@ -34,12 +34,24 @@
 }
 
 .line{
-    width: 20em;
-    height: 20em;
+    width: 15em;
+    height: 10em;
     border-top: solid 0.3em var(--secondary-color-light);
     border-right:  solid 0.3em var(--secondary-color-light);
     margin-top: 2em;
     border-radius: 0  4em 0 0;
+}
+
+.line-section{
+    position: relative;
+    overflow: hidden;
+}
+.hide-line{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: var(--tertiary-color-verylight);
+    opacity: 1;
 }
 
 .line.right{

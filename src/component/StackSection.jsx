@@ -38,12 +38,12 @@ const StackSection = () => {
           end: 'bottom bottom',
           scrub : 3,
           reversed: false,
-          /*markers: {
+          markers: {
             startColor: 'purple',
             endColor: 'fuchsia',
             fontSize: '1.5rem',
             indent: 200,
-          },*/
+          },
         },
       }))
         
@@ -53,9 +53,8 @@ const StackSection = () => {
             .fromTo(lineLeft.current,{width : 0, height:"0.5em"}, {width: "15em"})
             .fromTo(lineLeft.current,{height:"0.5em"}, {height: "10em"})
             .fromTo(frontSection.current,{opacity : 0}, {opacity : 1})
-            .fromTo(lineRight.current,{opacity : 0}, {opacity : 1})
-            .fromTo(lineRight.current,{width : 0, height:"0.5em"}, {width: "15em"})
-            .fromTo(lineRight.current,{height:"0.5em"}, {height: "10em"})
+            .fromTo(lineRight.current,{x:0}, {x:-200})
+            .fromTo(lineRight.current,{y:0}, {y:200})
             .fromTo(backSection.current,{opacity : 0}, {opacity : 1})
             
 
@@ -87,7 +86,10 @@ const StackSection = () => {
             <div className='line' ref={lineLeft}></div>
         </div>
         <div className='travel-section'>
-            <div className='line right' ref={lineRight}></div>
+            <div className='line-section'>
+                <div className='hide-line' ref={lineRight}></div>
+                <div className='line right' ></div>
+            </div>
             <div className="design-section right" ref={frontSection}>
                 <p className="explanation">Then time to design front-end</p>
                 <div className="icon-container">
