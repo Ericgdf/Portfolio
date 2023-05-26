@@ -38,12 +38,12 @@ const StackSection = () => {
           end: 'bottom bottom',
           scrub : 3,
           reversed: false,
-          markers: {
+         /* markers: {
             startColor: 'purple',
             endColor: 'fuchsia',
             fontSize: '1.5rem',
             indent: 200,
-          },
+          },*/
         },
       }))
         
