@@ -3,7 +3,7 @@ import { gsap, ScrollTrigger } from 'gsap/all';
 import { useRef, useEffect } from 'react';
 import '../css/StackSection.css'
 import pinterest from '../assets/Icon/pinterest.png'
-import figma from '../assets/Icon/figma.png'
+import figma from '../assets/Icon/Figma.png'
 import adobeAi from '../assets/Icon/adobe-illustrator.png'
 import javascript from '../assets/Icon/javascript.png'
 import reactIcon from '../assets/Icon/react.png'
