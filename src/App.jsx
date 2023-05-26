@@ -32,7 +32,7 @@ function App() {
   
  
   return (
-    <div className='Problemos' >
+    <div >
           <LandingPage />
           <Project />
           <StackSection />

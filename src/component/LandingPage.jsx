@@ -56,13 +56,13 @@ const LandingPage = () => {
   }))
     
     zoomTl.to(introText.current,{display : 'none', opacity : 0})
-          .fromTo(formZoomInRef.current, {height: '60vh', width: '20vw'}  , { height: '100vh', width: '100vw', borderRadius: 0,})
+          .fromTo(formZoomInRef.current, {height: '60%', width: '20%'}  , { height: '100%', width: '100%', borderRadius: 0,})
           .fromTo(presentationBackground.current,{display : 'none', opacity : 0}, {display : 'flex', opacity : 1})
           .from(aboutMyselfElement.current, {marginRight: 0, marginLeft : 0})
           .fromTo(bioPresentation.current, {opacity : 0}, {opacity : 1})
 
 
-  }, []);
+  }, []); 
 
   return (
 
