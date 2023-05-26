@@ -87,7 +87,7 @@
 
     .link-project{
         text-align: center;
-        font-size: 1.5em;
+        font-size: 1.1em;
     }
 
     .title-project{
@@ -144,4 +144,37 @@
     
 }
 
+@media  screen and (max-width : 520px) {
+
+
+    .img-section > img{
+        height: 30vh;
+        
+    }
+
+}
+
+@media  screen and (max-width : 430px) {
+
+    .resume-project{
+        width: 90%;
+        font-size: 1.2em;
+
+    }
+
+}
+
+@media  screen and (max-width : 380px) {
+
+    .title-project{
+        font-size: 1.8em;
+        
+    }
+
+    .img-section > img{
+        height: 25vh;
+        
+    }
+
+}
 

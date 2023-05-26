@@ -10,7 +10,7 @@
 .stack-title{
     font-size: 3em;
     color: var(--darken-text);
-    margin-bottom: 2em;
+    margin-bottom: 1.5em;
 }
 
 .travel-section{
@@ -62,6 +62,7 @@
 .icon-container{
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     gap: 1em;
     padding: 1em;
 }
