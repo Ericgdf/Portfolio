@@ -60,13 +60,21 @@
 
 @media  screen and (max-width : 530px) {
 
+    
+
     .ring-picture{
         height: 10em;
         width: 8em;
+        margin-left: 1em;
+        margin-right: 1em;
     }
 
     .title-presentation{
         font-size: 2.3em;
+    }
+
+    .text-presentation{
+        font-size: 1.2em;
     }
 
     
@@ -84,4 +92,24 @@
     }
 
 }
+
+@media  screen and (max-height : 700px) {
+
+    .ring-picture{
+        height: 10em;
+        width: 8em;
+        margin-left: 1em;
+        margin-right: 1em;
+    }
+
+    .title-presentation{
+        font-size: 2.3em;
+    }
+
+    .text-presentation{
+        font-size: 1.2em;
+    }
+
+}
+
 
