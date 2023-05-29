@@ -3,6 +3,8 @@ import '../css/ContactMe.css'
 import github from '../assets/Icon/github.png'
 import linkedin from '../assets/Icon/linkedin.png'
 import email from '../assets/Icon/email.png'
+import cv from '../assets/Icon/download-resume.png'
+import cvFiles from '../assets/document/CV-ERIC-GODEFROY-2023-FR.pdf'
 
 const ContactMe = ({toggleButtonLanguague}) => {
   return (
@@ -18,6 +20,12 @@ const ContactMe = ({toggleButtonLanguague}) => {
             <a href="mailto:ericgodefroy@outlook.fr">
             <img className='icon-contact' src={email} />
             </a>
+        </div>
+        <div className='cv-section'>
+        <p className='cv-text'>{toggleButtonLanguague ? "Voir mon CV" : "See my resume"}</p>
+        <a href={cvFiles} download>
+          <img className='icon-cv' src={cv} />
+        </a>
         </div>
         <p className='credit'>{toggleButtonLanguague ? "Fait avec amour et React" : "Made with heart and React"}</p>
     </div>

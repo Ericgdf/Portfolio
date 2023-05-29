@@ -77,6 +77,8 @@
     flex-wrap: wrap;
     gap: 1em;
     padding: 1em;
+    color: var(--darken-text);
+   
 }
 
 .element-icon{
