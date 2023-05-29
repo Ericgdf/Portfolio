@@ -39,6 +39,7 @@
 .resume-project{
     text-align: center;
     width: 70%;
+    font-family: var(--text-section);
 }
 
 .link-project{

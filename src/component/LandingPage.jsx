@@ -4,7 +4,9 @@ import Scrollicon from '../assets/Icon/scroll.png';
 import '../css/LandingPage.css';
 import '../css/PresentationSection.css'
 
-const LandingPage = () => {
+const LandingPage = ({toggleButtonLanguague}) => {
+
+  
   gsap.registerPlugin(ScrollTrigger);
 
   const [width, setWidth] = useState(0)
@@ -70,20 +72,23 @@ const LandingPage = () => {
       <div className="background-form" ref={formZoomInRef}>
         <div className='presentation-section-background' ref ={presentationBackground}>
         <div className="about-me-section">
-              <p className='title-presentation top' >About</p>
+              <p className='title-presentation top' >{toggleButtonLanguague ? "A propos" : "About"}</p>
                   <div className='ring-picture' ref= {aboutMyselfElement}>
                   </div>
-              <p className='title-presentation bottom'>Myself</p>
+              <p className='title-presentation bottom'>{toggleButtonLanguague ? "de moi" : "Myself"}</p>
         </div>
         <p className="text-presentation" ref={bioPresentation}>
-        I am a freshly graduated  web developer. Drawn to the charm of the Basque Country, I chose to settle in this region renowned for its emphasis on nature and outdoor sports. Combining my passion for technology with my love for nature, I am currently seeking an apprenticeship in a socially responsible and solidarity-based company. I aspire to contribute to projects that merge technological development with positive social impact, utilizing my skills to serve a cause that is close to my heart.
+        {toggleButtonLanguague 
+        ? "Je suis un développeur web fraîchement sorti de formation. Avant ma reconverstion j'ai commencé ma carrière dans le domaine du Revenue Management Hôtelier. Originaire de Lyon, j'ai décidé de m'installer au Pays-Basque pour profiter de l'océan et la montagne car j'aime les sports de nature. Actuellement, je suis à la recherche d'une alternance ou d'un emploi dans une entreprise avec des valeurs qui me corresponde. Mon objectif est de combiner ma passion pour la technologie avec mon engagement pour des projets ayant un impact positif. Je suis motivé à contribuer au développement de solutions innovantes et durables pour répondre aux défis sociétaux." 
+        : "I am a freshly graduated web developer. Before my career transition, I started my journey in the field of Hotel Revenue Management. Originally from Lyon, I decided to settle in the Basque Country to enjoy the ocean and mountains as I have a love for outdoor sports. Currently, I am actively seeking an apprenticeship or employment opportunity in a company that aligns with my values. My goal is to combine my passion for technology with my commitment to projects that have a positive impact. I am motivated to contribute to the development of innovative and sustainable solutions to address societal challenges."}
+        
         </p>
       </div>
       </div>
       <div className="text-landing-page" ref={introText}>
-        <p className="text-landing-page">Hello, I'm Eric</p>
-        <h1 className="title-landing-page">Web Developer</h1>
-        <p className="text-landing-page">Welcome to my portfolio</p>
+        <p className="text-landing-page">{toggleButtonLanguague ? "Bonjour, je suis Eric" : "Hello, I'm Eric"}</p>
+        <h1 className="title-landing-page">{toggleButtonLanguague ? "Developpeur Web" : "Web Developer"}</h1>
+        <p className="text-landing-page">{toggleButtonLanguague ? "Bienvenue dans mon portfolio" : "Welcome to my portfolio"}</p>
       </div>
       <img className="scroll-icon" src={Scrollicon} alt="icon scroll" ref={scrollIconRef} />
     </div>

@@ -1,7 +1,7 @@
 import React from 'react'
 import '../css/Project.css'
 
-const ProjectPresentation = ({name, description, imageLink, websiteLink,id}) => {
+const ProjectPresentation = ({name, description, imageLink, websiteLink,id, toggleButtonLanguague}) => {
   return (
       <div className="prez-project-background">
         <div className="text-project-section">
@@ -9,7 +9,7 @@ const ProjectPresentation = ({name, description, imageLink, websiteLink,id}) => 
           <p className="resume-project"> {description} </p>
           {websiteLink === "" 
           ? "" 
-          : <a className="link-project" href= {websiteLink} target='_blank'> Go to the website</a>
+          : <a className="link-project" href= {websiteLink} target='_blank'> {toggleButtonLanguague ? "Voir le site web" : "Go to the website"}</a>
           }
         </div>
         <div className="img-section">

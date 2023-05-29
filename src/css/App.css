@@ -1,8 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit&display=swap');
+
 @font-face {
   font-family: 'Magilio';
   src: url('../assets/fonts/MagilioRegular-8Mxvg.otf') format('opentype');
   font-weight: 100;
 }
+
+
 
 
 
@@ -21,6 +25,7 @@ html{
   --very-darken-text: #1D2E2F;
   --brown-text : #BD8275;
   --line-color: #EFE0DC;
+  --text-section : 'Outfit'
 }
 
 *{

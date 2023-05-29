@@ -31,6 +31,7 @@
 
 .title-presentation{
     font-size: 3em;
+    text-align: center;
 }
 
 .title-presentation.top{
@@ -49,6 +50,7 @@
     text-align: center;
     color: var(--primary-color);
     font-size: 1.2em;
+    font-family: var(--text-section);
 }
 
 @media  screen and (max-width : 1080px) {
@@ -70,28 +72,19 @@
     }
 
     .title-presentation{
-        font-size: 2.3em;
+        font-size: 1.4em;
     }
 
     .text-presentation{
-        font-size: 1.2em;
+        font-size: 1.05em;
+        margin-top: 1em;
     }
 
     
     
 }
 
-@media  screen and (max-width : 430px) {
 
-    .title-presentation{
-        font-size: 1.8em;
-    }
-
-    .text-presentation{
-        font-size: 1.2em;
-    }
-
-}
 
 @media  screen and (max-height : 700px) {
 
@@ -103,11 +96,11 @@
     }
 
     .title-presentation{
-        font-size: 2.3em;
+        font-size: 1.4em;
     }
 
     .text-presentation{
-        font-size: 1.2em;
+        font-size: 1em;
     }
 
 }
