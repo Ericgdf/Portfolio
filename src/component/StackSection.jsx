@@ -14,7 +14,7 @@ import mysql from '../assets/Icon/mysql.png'
 import node from '../assets/Icon/node-js.png'
 
 
-const StackSection = () => {
+const StackSection = ({toggleButtonLanguague}) => {
 
     gsap.registerPlugin(ScrollTrigger);
 
@@ -67,7 +67,7 @@ const StackSection = () => {
         <h1 className="stack-title" ref= {firstTrigger}>Stack</h1>
         <div className='travel-section'>
             <div className="design-section" ref={designSection}>
-                <p className="explanation">First came the idea</p>
+                <p className="explanation">{toggleButtonLanguague ? "D'abord penser le design" : "First came the idea"}</p>
                 <div className="icon-container">
                     <div className="element-icon">
                         <img className='icon' src={pinterest} />
@@ -91,7 +91,7 @@ const StackSection = () => {
                 <div className='line right' ></div>
             </div>
             <div className="design-section right" ref={frontSection}>
-                <p className="explanation">Then time to design front-end</p>
+                <p className="explanation">{toggleButtonLanguague ? "Fabrication du front" : "Then time to design front-end"}</p>
                 <div className="icon-container">
                     <div className="element-icon">
                         <img className='icon' src={javascript} />
@@ -115,7 +115,7 @@ const StackSection = () => {
         <div className='travel-section'>
             
             <div className="design-section" ref={backSection}>
-                <p className="explanation">And if we need back-end</p>
+                <p className="explanation">{toggleButtonLanguague ? "Pour le back" : "Back-end side"}</p>
                 <div className="icon-container">
                     <div className="element-icon">
                         <img className='icon' src={express} />
