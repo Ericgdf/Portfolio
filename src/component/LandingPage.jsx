@@ -61,6 +61,7 @@ const LandingPage = ({toggleButtonLanguague}) => {
           .fromTo(formZoomInRef.current, {height: '60%', width: '20%'}  , { height: '100%', width: '100%', borderRadius: 0,})
           .fromTo(presentationBackground.current,{display : 'none', opacity : 0}, {display : 'flex', opacity : 1})
           .from(aboutMyselfElement.current, {marginRight: 0, marginLeft : 0})
+          .fromTo(scrollIconRef.current, {opacity : 1}, {opacity :0})
           .fromTo(bioPresentation.current, {opacity : 0}, {opacity : 1})
 
 
