@@ -53,7 +53,7 @@
     height: 4em;
     width: 4em;
     margin-top: 0.5em;
-    animation: scaleAnimation 2s infinite alternate;
+    animation: scaleAnimation 2.5s infinite alternate;
 }
 
 @keyframes scaleAnimation {
