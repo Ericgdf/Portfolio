@@ -3,7 +3,7 @@ import '../css/ContactMe.css'
 import github from '../assets/Icon/github.png'
 import linkedin from '../assets/Icon/linkedin.png'
 import email from '../assets/Icon/email.png'
-import cv from '../assets/Icon/download-resume.png'
+import cv from '../assets/Icon/website-logo.png'
 import cvFiles from '../assets/document/CV-ERIC-GODEFROY-2023-FR.pdf'
 
 const ContactMe = ({toggleButtonLanguague}) => {
