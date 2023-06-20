@@ -1,0 +1,85 @@
+.project-demo-bckg{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background-color: var(--primary-color) ;
+    padding-top: 1em;
+    padding-bottom: 2em;
+    min-height: 100vh;
+    
+}
+
+.projet-name{
+    font-size: 7dvw;
+    color: var(--square-color2);
+}
+
+
+.main-content{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap:2em;
+    width: 80%;
+    color: var(--darken-text);
+    font-family: var(--text-section)
+}
+
+video{
+    width: 50em;
+    height: auto;
+    border: 0.5em solid var(--tertiary-color-verylight);
+    border-radius: 2em;
+}
+
+.description{
+    width: 80%;
+    text-align: center;
+    font-family: var(--text-section);
+    font-size: 1.3em;
+    
+}
+
+.link-to{
+    display: flex;
+    gap: 1em;
+    font-family: var(--text-section);
+}
+
+.button-link{
+    text-align: center;
+    all: unset;
+    padding: 0.5em;
+    border-radius: 1em;
+    background-color: var(--tertiary-color-verylight);
+}
+
+
+
+.button-link:hover{
+    color: var(--tertiary-color-verylight);
+    background-color:  var(--primary-color);
+    border : none;
+    cursor: pointer;
+    
+}
+
+.tools{
+    text-align: center;
+    font-size: 1.3em;
+ 
+}
+
+
+
+.icon-content{
+    position: absolute;
+    top: 1em;
+    left: 1em;
+    border:  0.1em solid var(--tertiary-color-verylight);
+    border-radius: 2em;
+    padding: 0.5em;
+}
+

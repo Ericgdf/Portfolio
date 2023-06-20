@@ -1,10 +1,11 @@
 import React from 'react'
 import '../css/ToggleButtonLanguage.css'
 
-const ToggleButtonLanguage = ({handleToggleButton, toggleButton}) => {
+const ToggleButtonLanguage = ({handleToggleButtonLanguage, toggleButtonLanguage}) => {
+  console.log(toggleButtonLanguage)
   return (
-    <div className='toggle-bckg' onClick={handleToggleButton}>
-        {toggleButton 
+    <div className='toggle-bckg' onClick={handleToggleButtonLanguage}>
+        {toggleButtonLanguage 
         ?  <p className="language">🌍 FR</p> 
         :  <p className="language">🌍 EN</p>  }     
     </div>
