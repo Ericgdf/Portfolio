@@ -6,10 +6,10 @@ import email from '../assets/Icon/email.png'
 import cv from '../assets/Icon/website-logo.png'
 import cvFiles from '../assets/document/CV-ERIC-GODEFROY-2023-FR.pdf'
 
-const ContactMe = ({toggleButtonLanguague}) => {
+const ContactMe = ({toggleButtonLanguage}) => {
   return (
     <div className='contact-background'>
-        <h1 className='contact-title'>{toggleButtonLanguague ? "Me contacter" : "Contact Me"}</h1>
+        <h1 className='contact-title'>{toggleButtonLanguage ? "Me contacter" : "Contact Me"}</h1>
         <div className="icon-section-contact">
             <a href='https://github.com/Ericgdf' target ='_blank'>
             <img className='icon-contact' src={github} />
@@ -22,12 +22,12 @@ const ContactMe = ({toggleButtonLanguague}) => {
             </a>
         </div>
         <div className='cv-section'>
-        <p className='cv-text'>{toggleButtonLanguague ? "Voir mon CV" : "See my resume"}</p>
+        <p className='cv-text'>{toggleButtonLanguage ? "Voir mon CV" : "See my resume"}</p>
         <a href={cvFiles} download>
           <img className='icon-cv' src={cv} />
         </a>
         </div>
-        <p className='credit'>{toggleButtonLanguague ? "Fait avec amour et React" : "Made with heart and React"}</p>
+        <p className='credit'>{toggleButtonLanguage ? "Fait avec amour et React" : "Made with heart and React"}</p>
     </div>
   )
 }
