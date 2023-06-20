@@ -69,7 +69,13 @@ video{
 .tools{
     text-align: center;
     font-size: 1.3em;
+  
  
+}
+
+.tools.text{
+    margin-top: 0.5em;
+    font-weight: 600;
 }
 
 

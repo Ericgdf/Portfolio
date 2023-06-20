@@ -57,7 +57,7 @@ const ProjectPage = ({infoProject}) => {
 
             <div className="stack">
               <p className="tools">Technologies</p>
-              <p className="tools">{projectChoose && projectChoose[0].stack}</p>
+              <p className="tools text">{projectChoose && projectChoose[0].stack}</p>
             </div>
             <div className="link-to">
             {projectChoose && projectChoose[0].websiteLink === "" ? null : 

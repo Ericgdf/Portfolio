@@ -41,19 +41,22 @@
     width: 70%;
     font-family: var(--text-section);
 }
-
-.link-project{
+.link-to{
+    text-decoration: none;
+}
+.see-more{
     text-align: center;
-    all: unset;
-    padding: 0.5em;
-    border: solid 1px var(--secondary-color-light);
-    border-radius: 0.4em;
+    padding: 0.1em 0.3em ;
+    border: solid 0.07em var(--secondary-color-light);
+    border-radius: 1em;
+    font-size: 1.5em;
+    color: var(--primary-color) ;
 }
 
-.link-project:hover{
+.see-more:hover{
     color: var(--tertiary-color-verylight);
     background-color: var(--primary-color);
-    border : none;
+    border: solid 0.07em var(--tertiary-color-verylight);
     cursor: pointer;
     
 }
