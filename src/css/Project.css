@@ -1,206 +1,184 @@
-.project-background{
-    background-color: var(--tertiary-color-verylight);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 5em 3em 3em 3em;
-    width: 100%;
+.project-background {
+  background-color: var(--tertiary-color-verylight);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5em 3em 3em 3em;
+  width: 100%;
 }
 
-.section-title{
-    color: var(--primary-color);
-    font-size: 3em;
-    margin-bottom: 2em;
+.section-title {
+  color: var(--primary-color);
+  font-size: 3em;
+  margin-bottom: 2em;
 }
 
 /* project presentation section */
-.prez-project-background{
-    display: flex;
-    align-items: center;
-    height: 25em;
-    margin: 2em;
+.prez-project-background {
+  display: flex;
+  align-items: center;
+  height: 25em;
+  margin: 2em;
 }
 
-.text-project-section{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 50%;
-    gap: 1em;
-    color: var(--primary-color);
-    
+.text-project-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+  gap: 1em;
+  color: var(--primary-color);
 }
 
-.title-project{
-    font-size: 1.5em;
-    text-align: center;
+.title-project {
+  font-size: 1.5em;
+  text-align: center;
 }
 
-.resume-project{
-    text-align: center;
-    width: 70%;
-    font-family: var(--text-section);
+.resume-project {
+  text-align: center;
+  width: 70%;
+  font-family: var(--text-section);
 }
-.link-to{
-    text-decoration: none;
+.link-to {
+  text-decoration: none;
 }
-.see-more{
-    text-align: center;
-    padding: 0.1em 0.3em ;
-    border: solid 0.07em var(--secondary-color-light);
-    border-radius: 1em;
-    font-size: 1.5em;
-    color: var(--primary-color) ;
-}
-
-.see-more:hover{
-    color: var(--tertiary-color-verylight);
-    background-color: var(--primary-color);
-    border: solid 0.07em var(--tertiary-color-verylight);
-    cursor: pointer;
-    
+.see-more {
+  text-align: center;
+  padding: 0.1em 0.3em;
+  border: solid 0.07em var(--secondary-color-light);
+  border-radius: 1em;
+  font-size: 1.5em;
+  color: var(--primary-color);
 }
 
-.img-section{
-    width: 50%;
-    display: flex;
-    align-items: center;
+.see-more:hover {
+  color: var(--tertiary-color-verylight);
+  background-color: var(--primary-color);
+  border: solid 0.07em var(--tertiary-color-verylight);
+  cursor: pointer;
 }
 
-.img-prez{
- height: 20em;
- z-index: 8;
- border-radius: 0.4em;
- margin-left: -3em;
- box-shadow: 20px 17px 19px 1px rgba(0, 0, 0, 0.11);
- position:relative;
- transition: transform 0.3s ease;
+.img-section {
+  width: 50%;
+  display: flex;
+  align-items: center;
 }
 
-.img-prez:hover{
+.img-prez {
+  height: 20em;
+  z-index: 8;
+  border-radius: 0.4em;
+  margin-left: -3em;
+  box-shadow: 20px 17px 19px 1px rgba(0, 0, 0, 0.11);
+  position: relative;
+  transition: transform 0.3s ease;
+}
+
+.img-prez:hover {
   transform: scale(1.02);
   opacity: 0.9;
 }
 
-.link{
-    background-color: var(--line-color);
-    height: 30em;
-    width: 0.3em;
-    border-radius: 1em;
+.link {
+  background-color: var(--line-color);
+  height: 30em;
+  width: 0.3em;
+  border-radius: 1em;
 }
 
-
-.color-square{
-    height: 25em;
-    width: 10em;
-    border-radius: 0.4em;
-    z-index: 3;
-    margin-left: -5em;
-    box-shadow: 20px 17px 19px 1px rgba(0, 0, 0, 0.11);
+.color-square {
+  height: 25em;
+  width: 10em;
+  border-radius: 0.4em;
+  z-index: 3;
+  margin-left: -5em;
+  box-shadow: 20px 17px 19px 1px rgba(0, 0, 0, 0.11);
 }
 
-.color-square.odd{
-    background-color: var(--square-color1);
+.color-square.odd {
+  background-color: var(--square-color1);
 }
 
-.color-square.even{
-    background-color: var( --square-color2);
+.color-square.even {
+  background-color: var(--square-color2);
 }
 
-/* responsive section */ 
+/* responsive section */
 
-@media  screen and (max-width : 1130px) {
+@media screen and (max-width: 1130px) {
+  .link-project {
+    text-align: center;
+    font-size: 1.1em;
+  }
 
-    .link-project{
-        text-align: center;
-        font-size: 1.1em;
-    }
+  .title-project {
+    font-size: 2em;
+  }
 
-    .title-project{
-        font-size: 2em;
-        
-    }
+  .resume-project {
+    width: 90%;
+    font-size: 1.4em;
+  }
 
-    .resume-project{
-        width: 90%;
-        font-size: 1.4em;
+  .prez-project-background {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1em;
+    margin-bottom: 1em;
+    height: 100%;
+    padding: 0;
+    margin-bottom: 1em;
+    padding: 1em;
+  }
 
-    }
+  .section-title {
+    margin-bottom: 0.3em;
+  }
 
-    .prez-project-background{
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-        justify-content: center;
-        gap: 1em;
-        margin-bottom: 1em;
-        height: 100%;
-        padding: 0;
-        margin-bottom: 1em;
-        padding: 1em;
-        
-    }
+  .text-project-section {
+    width: 100%;
+  }
 
-    .section-title{
-        margin-bottom: 0.3em;
-    }
+  .link {
+    display: none;
+  }
 
-    .text-project-section{
-        width: 100%;
-    }
+  .color-square {
+    display: none;
+  }
 
-    .link{
-       display: none;
-    }
+  .img-section {
+    width: 80%;
+    justify-content: space-around;
+  }
 
-    .color-square{
-        display: none;
-    }
-
-    .img-section{
-        width: 80%;
-        justify-content: space-around;
-        
-    }
-
-    .img-section > img{
-        margin-left: 0;
-        
-    }
-    
+  .img-section > img {
+    margin-left: 0;
+  }
 }
 
-@media  screen and (max-width : 520px) {
-
-
-    .img-section > img{
-        height: 30vh;
-        
-    }
-
+@media screen and (max-width: 520px) {
+  .img-section > img {
+    height: 30vh;
+  }
 }
 
-@media  screen and (max-width : 430px) {
-
-    .resume-project{
-        width: 90%;
-        font-size: 1.2em;
-
-    }
-
+@media screen and (max-width: 430px) {
+  .resume-project {
+    width: 90%;
+    font-size: 1.2em;
+  }
 }
 
-@media  screen and (max-width : 380px) {
+@media screen and (max-width: 380px) {
+  .title-project {
+    font-size: 1.8em;
+  }
 
-    .title-project{
-        font-size: 1.8em;
-        
-    }
-
-    .img-section > img{
-        height: 25vh;
-        
-    }
-
+  .img-section > img {
+    height: 25vh;
+  }
 }
-

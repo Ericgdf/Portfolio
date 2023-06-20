@@ -1,37 +1,30 @@
-.toggle-bckg{
-    position: fixed;
-    z-index: 1000;
-    top: 1em;
-    right: 1em;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
+.toggle-bckg {
+  position: fixed;
+  z-index: 1000;
+  top: 1em;
+  right: 1em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-
-
-.language{
-    background-color: var(--primary-color);
-    color: var(--tertiary-color-verylight);
-    font-size: 0.8em;
-    letter-spacing: 0.2em;
-    padding: 0.5em;
-    border-radius: 1em;
-    opacity: 0.8;
-    transition: transform 0.3s ease;
-    cursor: pointer;
+.language {
+  background-color: var(--primary-color);
+  color: var(--tertiary-color-verylight);
+  font-size: 0.8em;
+  letter-spacing: 0.2em;
+  padding: 0.5em;
+  border-radius: 1em;
+  opacity: 0.8;
+  transition: transform 0.3s ease;
+  cursor: pointer;
 }
 
 .language:hover {
-    transform: scale(1.1);
+  transform: scale(1.1);
 }
 
-.language > img{
-    height: 1em;
-    width: 1em;
+.language > img {
+  height: 1em;
+  width: 1em;
 }
-
-
-
-
