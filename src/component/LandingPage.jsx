@@ -40,6 +40,7 @@ const LandingPage = ({ toggleButtonLanguage }) => {
     });
 
     // zoom in effect
+    
 
     const zoomTl = gsap.timeline({
       scrollTrigger: {

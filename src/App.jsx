@@ -5,6 +5,7 @@ import { useEffect, useState } from "react";
 import { Routes, Route } from "react-router-dom";
 
 import agenceMockUp from "./assets/mock-up/agence mock-up.png";
+import EmmausConnect from "./assets/mock-up/Emmaus-connect.png"
 import illuxplorationMockUp from "./assets/mock-up/illuxploration mock-up.png";
 import spotCast from "./assets/mock-up/Spotcast.png";
 import undefined from "./assets/mock-up/Undefined.png";
@@ -12,6 +13,8 @@ import illuxplorationVideo from "./assets/video/illuxploration-prez.mp4";
 import architectureVideo from "./assets/video/architectureVideo.mp4";
 import spotcastVideo from "./assets/video/spotcastVideo.mp4";
 import undefinedVideo from "./assets/video/undefined.mp4";
+import emmausConnectVideo from "./assets/video/Emmaus-connect.mp4"
+
 
 import "./css/LandingPage.css";
 import "./css/PresentationSection.css";
@@ -29,6 +32,19 @@ function App() {
   }, [toggleButtonLanguage]);
 
   const infoProject = [
+    {
+      id: 5,
+      name: toggleButtonLanguage ? "Emmaus Connect Hackathon" : "Emmaus Connect Hackathon",
+      description: toggleButtonLanguage
+        ? "L'objectif de ce projet de groupe était de créer un site interne pour Emmaüs Connect, permettant de définir un prix de vente pour un don de téléphone en se basant sur ses caractéristiques et son état, puis d'envoyer ce téléphone en base de données. Nous avions 48 heures en groupe de 5 personnes."
+        : "The objective of this group project was to create an internal website for Emmaüs Connect that would allow us to determine a selling price for a donated phone based on its characteristics and condition, and then send this phone to a database. We had 48 hours with a group of 5 people.",
+      imageLink: EmmausConnect,
+      websiteLink: "http://146.59.227.110:3030/",
+      stack: "Figma | JS | React.js | Express.js | MySql | HTML | CSS",
+      videoLink: emmausConnectVideo,
+      repoLink: "https://github.com/Elolecroco/hackathon_emmaus",
+      bckgColor: "#D5B2A9",
+    },
     {
       id: 2,
       name: toggleButtonLanguage ? "Projet Spotcast" : "Surf Spotcast",
