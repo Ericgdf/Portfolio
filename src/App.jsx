@@ -5,10 +5,12 @@ import { useEffect, useState } from "react";
 import { Routes, Route } from "react-router-dom";
 
 import agenceMockUp from "./assets/mock-up/agence mock-up.png";
+import escapeRoom from "./assets/mock-up/escape-room.jpg";
 import EmmausConnect from "./assets/mock-up/Emmaus-connect.png"
 import illuxplorationMockUp from "./assets/mock-up/illuxploration mock-up.png";
 import spotCast from "./assets/mock-up/Spotcast.png";
 import undefined from "./assets/mock-up/Undefined.png";
+import escapeRoomVideo from "./assets/video/escape-room-video.mp4"
 import illuxplorationVideo from "./assets/video/illuxploration-prez.mp4";
 import architectureVideo from "./assets/video/architectureVideo.mp4";
 import spotcastVideo from "./assets/video/spotcastVideo.mp4";
@@ -32,6 +34,19 @@ function App() {
   }, [toggleButtonLanguage]);
 
   const infoProject = [
+    {
+      id: 6,
+      name: toggleButtonLanguage ? "Escape Room" : "Escape Room",
+      description: toggleButtonLanguage
+        ?"L'objectif de ce projet était de créer une V1 d'escape room. J'ai toujours beaucoup aimé les escape games et cela faisait longtemps que j'avais envie d'essayer d'en créer une virtuel. Également, cela m'a permis d'aborder mes premières notions en TypeScript."
+        : "The objective of this project was to create a version 1 of an escape room. I have always enjoyed escape games, and it had been a long time since I wanted to try creating a virtual one. Additionally, it allowed me to explore my first notions of TypeScript.",
+      imageLink: escapeRoom,
+      websiteLink: "https://escape-room-eric-gdf.vercel.app/",
+      stack: "Figma | TypeScript | React.js | HTML | CSS",
+      videoLink: escapeRoomVideo,
+      repoLink: "https://github.com/Ericgdf/Escape-room",
+      bckgColor: "#B0CDCE",
+    },
     {
       id: 5,
       name: toggleButtonLanguage ? "Emmaus Connect Hackathon" : "Emmaus Connect Hackathon",
